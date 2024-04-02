@@ -1,22 +1,31 @@
-@charset "UTF-8";
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #1E90FF 0%, #00BFFF 100%);
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
     text-align: center;
+    color: #333; /* Cor padrão para o texto */
 }
 
+/* Títulos */
+h1 {
+    font-size: 36px;
+    color: #000; /* Preto */
+    font-family: 'Arial Black', sans-serif; /* Estilo de fonte mais forte */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #000; /* Preto */
+    font-family: 'Arial', sans-serif; /* Estilo de fonte mais suave */
+    margin-bottom: 10px;
+}
+
+/* Navegação */
 nav {
-    background-color: #444;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
     padding: 10px;
-    text-align: center;
 }
 
 nav ul {
@@ -31,50 +40,46 @@ nav li {
 }
 
 nav li a {
-    color: white;
+    color: #0000FF; /* Azul */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav li a:hover {
-    color: #ddd;
+    color: #00008B; /* Azul mais escuro ao passar o mouse */
+    text-decoration: none; /* Remover sublinhado ao passar o mouse */
 }
 
+/* Conteúdo */
 section {
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #1E90FF 0%, #00BFFF 100%);
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: #333; /* Cor padrão para o texto */
 }
+
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha se necessário */
+    margin-bottom: 30px;
 }
 
 .image-container img {
-    width: 200px;
+    max-width: 100%;
     height: auto;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: transform 0.3s ease;
+    max-height: 300px; /* Altura máxima das imagens */
+    margin: 10px; /* Espaçamento entre as imagens */
 }
 
 .image-container img:hover {
     transform: scale(1.05);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
