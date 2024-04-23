@@ -1,6 +1,6 @@
 /* Estilo de fundo */
 body {
-    background: linear-gradient(to bottom, #0000FF 0%, #87CEFA 100%);
+    background: linear-gradient(to bottom, #D8BFD8 0%, #ADD8E6 100%);
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -11,16 +11,72 @@ body {
 /* Títulos */
 h1 {
     font-size: 36px;
-    color: #000; /* Preto */
+    color: black; /* Preto */
     font-family: 'Arial Black', sans-serif; /* Estilo de fonte mais forte */
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 30px;
-    color: #000; /* Preto */
-    font-family: 'Arial', sans-serif; /* Estilo de fonte mais suave */
+    color: black; /* Preto */
+    font-family: 'Arial Black', sans-serif; /* Estilo de fonte mais forte */
     margin-bottom: 10px;
+    margin-top: 20px; /* Espaçamento superior para separar os títulos */
+}
+
+/* Centralizar textos em header, footer e section#musicas */
+header, footer, section#musicas {
+    padding: 20px;
+}
+
+/* Estilos para parágrafos ímpares */
+.paragrafo-impar {
+    font-size: 16pt;
+    font-family: 'Arial', sans-serif;
+    color: red;
+}
+
+/* Estilos para parágrafos pares */
+.paragrafo-par {
+    font-size: 20pt;
+    font-family: 'Verdana', sans-serif;
+    color: blue;
+}
+
+#paragrafo1.paragrafo-impar {
+    transition: color 0.5s ease;
+}
+
+#paragrafo1.paragrafo-impar {
+    border: 2px solid purple; /* Borda roxa ao redor do parágrafo 1 */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#paragrafo1.paragrafo-impar:hover {
+    color: orange; /* Altera a cor para laranja ao passar o mouse */
+}
+
+#paragrafo2.paragrafo-par {
+    border: 2px dashed blue; /* Borda azul em linha tracejada ao redor do parágrafo 2 */
+    border-radius: 5px;
+}
+
+#paragrafo3.paragrafo-impar {
+    transition: color 0.5s ease;
+}
+
+#paragrafo3.paragrafo-impar:hover {
+    color: orange; /* Altera a cor para laranja ao passar o mouse */
+}
+
+#paragrafo3.paragrafo-impar {
+    border: 2px solid purple; /* Borda roxa ao redor do parágrafo 1 */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#paragrafo4.paragrafo-par {
+    border: 2px dashed blue; /* Borda azul em linha tracejada ao redor do parágrafo 2 */
+    border-radius: 5px;
 }
 
 /* Navegação */
@@ -55,11 +111,29 @@ nav li a:hover {
 section {
     padding: 30px;
     text-align: justify;
-    background: linear-gradient(to bottom, #0000FF 0%, #87CEFA 100%);
+    background: linear-gradient(to bottom, #D8BFD8 0%, #ADD8E6 100%);
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
     color: #333; /* Cor padrão para o texto */
+}
+
+/* Seção de músicas */
+section#musicas {
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+section#musicas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#musicas li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 /* Estilo para o container de imagens */
